@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace C_Animal.Models
 {
-    class Animal
+    interface IPilotage
     {
-
+        void Move();
     }
 }
