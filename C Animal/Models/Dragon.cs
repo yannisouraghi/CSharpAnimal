@@ -1,4 +1,5 @@
-﻿using System;
+﻿using C_Animal.utils;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,8 +7,17 @@ using System.Threading.Tasks;
 
 namespace C_Animal.Models
 {
-    public class Dragon : Animal
+    public class Dragon : Animal, IPilotage
     {
+        public Dragon(string nom, rarity rarity , int ident) : base(nom, rarity, ident)
+        {
+        }
+
+        public void Drive()
+        {
+            throw new NotImplementedException();
+        }
+
         public override void Moove()
         {
             Console.WriteLine("Dragon is moving");
@@ -16,5 +26,6 @@ namespace C_Animal.Models
         {
             Console.WriteLine("Dragon is sleeping");
         }
+
     }
 }

@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace C_Animal.Models
+namespace C_Animal.utils
 {
-    interface IPilotage
+    public enum rarity
     {
-        void Moove();
-
-        void Drive();
+        Common,
+        Rare,
+        Legendaire
     }
 }

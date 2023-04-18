@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace C_Animal.Models
 {
-    class Vehicle
+    public class Vehicle : IPilotage
     {
         public string marque;
 
@@ -15,9 +15,14 @@ namespace C_Animal.Models
             marque = nom;
         }
 
-        public void Move()
+        public void Drive()
         {
-            Console.WriteLine(marque + "is moving");
+            throw new NotImplementedException();
+        }
+
+        public void Moove()
+        {
+            Console.WriteLine(marque + " is moving");
         }
     }
 }
