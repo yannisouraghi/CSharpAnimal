@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace C_Animal.Models
 {
-    public class Dragon : Animal, IPilotage
+    public class Dragon : Animal, IPilotage, IFly
     {
         public Dragon(string nom, rarity rarity , int ident) : base(nom, rarity, ident)
         {
@@ -25,6 +25,11 @@ namespace C_Animal.Models
         public new void Sleep()
         {
             Console.WriteLine("Dragon is sleeping");
+        }
+
+        public void Voler()
+        {
+            Console.WriteLine("Dragon est en train de voler");   
         }
 
     }

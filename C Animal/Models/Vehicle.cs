@@ -24,5 +24,10 @@ namespace C_Animal.Models
         {
             Console.WriteLine(marque + " is moving");
         }
+
+        public void Voler()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

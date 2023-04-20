@@ -7,12 +7,8 @@ using System.Threading.Tasks;
 
 namespace C_Animal.Models
 {
-    public class Griffin : Animal
+    public class Griffin : Animal, IFly
     {
-        private string v1;
-        private rarity common;
-        private int v2;
-
         public Griffin(string nom, rarity rarity, int ident) : base(nom, rarity, ident)
         {
         }
@@ -25,5 +21,11 @@ namespace C_Animal.Models
         {
             Console.WriteLine("Griffin is sleeping");
         }
+
+        public void Voler()
+        {
+            Console.WriteLine("Griffin est en train de voler");
+        }
+
     }
 }
